@@ -1,0 +1,50 @@
+.login__wrapper {
+    position: relative;
+}
+
+.login__wrapper--layout {
+    position: absolute;
+    left:40%;
+    top: 200px;
+    width:300px;
+    height: 350px;
+    border:3px solid #2A3542;
+    border-radius: 10px;
+    background-color: white;
+}
+.login__title{
+    text-align: center;
+    background-color: #2A3542;
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0px;
+
+
+}
+.submit, .id, .admin, .password, .forget{
+    display: block;
+    margin:20px 30px;
+}
+
+.admin{
+    font-weight: bolder;
+
+}
+.forget{
+    font-size: 10px;
+}
+.button{
+    background-color: #2A3542;
+    color:white;
+    width:300px;
+    height:50px;
+    border:1px solid #2A3542;
+    border-radius: 1px;
+    position: absolute;
+    bottom: 0px;
+    right:0;
+}
+.button:hover{
+    cursor:pointer;
+}
