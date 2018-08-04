@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9bb5ddc-b98d-4c93-91a2-870174860c4d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/signUpHtml.html" afterDir="false" />
-    </list>
+    <list default="true" id="e9bb5ddc-b98d-4c93-91a2-870174860c4d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,9 +38,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signUpHtml.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="signUpHtml.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/signUpHtml.html">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="signUp.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/signUp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="loginCss.css" pinned="false" current-in-tab="false">
@@ -76,6 +83,7 @@
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/signUpHtml.html" />
+        <option value="$PROJECT_DIR$/signUp.php" />
       </list>
     </option>
   </component>
@@ -151,12 +159,12 @@
       <option name="presentableId" value="Default" />
       <updated>1533389797979</updated>
       <workItem from="1533389800945" duration="1132000" />
-      <workItem from="1533391214734" duration="869000" />
+      <workItem from="1533391214734" duration="1747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2001000" />
+    <option name="totallyTimeSpent" value="2879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -259,6 +267,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/signUpHtml.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
