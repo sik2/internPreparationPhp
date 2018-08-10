@@ -62,7 +62,7 @@
         echo mysqli_error($link);
         exit;
         }
-        header("Location:/view.php?no={$no}");
+        header("Location:/view.php?id={$id}");
     }
 
 ?>
