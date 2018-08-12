@@ -1,24 +1,25 @@
 <?php
-    if(!isset($_GET['id'])) {
+
+    if (!isset($_GET['id'])) {
         echo '잘못된 요청입니다.';
         exit;
     }
-    $link = mysqli_connect('localhost','root','123456','homepage','3306');
-    if((!$link)){
+    $link = mysqli_connect('localhost', 'root', '123456', 'homepage', '3306');
+    if ((!$link)) {
         echo 'DB접속 실패!';
         echo mysqli_connect_error();
         exit;
     }
     $query = "SELECT * FROM `article` WHERE `id` = {$_GET['id']}";
-    $result = mysqli_query($link,$query);
+    $result = mysqli_query($link, $query);
 
-    if(empty($result)){
+    if (empty($result)) {
         echo mysqli_error($link);
         exit;
     }
     $data = mysqli_fetch_assoc($result);
 
-    if(empty($data)) {
+    if (empty($data)) {
         echo '존재하지 않는 게시글입니다.';
         exit;
     }
@@ -34,7 +35,8 @@
 
 </head>
 <body>
-<form action="articleCreate.php" method="post">
+<form action="articleModified2.php" method="post">
+    <input type="hidden" id="id" name="id" value="<?= $data['id']?>"><br>
     <label for="user">글쓴이</label>
     <input type="text" id="user" name="user" value="<?= $data['user']?>"><br>
     <label for="user">제목</label>
@@ -45,25 +47,3 @@
 </form>
 </body>
 </html>
-
-
-
-<?php
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        $id = $_POST['id'];
-        $user = $_POST['user'];
-        $title = $_POST['title'];
-        $body = $_POST['body'];
-
-        $query = "UPDATE `article` SET `writer` = '{$writer}',`title` = '{$title}',`body` = '{$body}'WHERE `id` = {$id}";
-        $result = mysqli_query($query);
-
-    if(empty($result)){
-        echo mysqli_error($link);
-        exit;
-        }
-        header("Location:/view.php?id={$id}");
-    }
-
-?>
-
